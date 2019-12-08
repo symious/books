@@ -14,6 +14,9 @@
 #include <sys/termios.h>
 
 #if defined(MACOS) || !defined(TIOCGWINSZ)
+#include <sys/ioctl.h>
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
